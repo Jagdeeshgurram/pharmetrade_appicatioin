@@ -3,7 +3,7 @@ name: Build and Push Docker Image on Commit
 on:
   push:
     branches:
-      - main  # Change this to the branch that should trigger the action
+      - main  # Runs only when pushing to the main branch
 
 jobs:
   build-and-push:
