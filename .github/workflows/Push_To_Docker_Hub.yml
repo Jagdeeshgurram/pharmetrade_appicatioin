@@ -4,7 +4,7 @@ name: Build and Push Docker Image on Commit
 on:
   push:
     branches:
-      - Dev-Pharma-Etrade  # Change this to the branch you want to trigger the action
+      - main # Change this to the branch you want to trigger the action
 
 jobs:
   build-and-push:
@@ -29,4 +29,4 @@ jobs:
       # Step 4: Build the Docker image using Docker Buildx
       - name: Build Docker image
         run: |
-          docker buildx build -t ${{ secrets.DOCKER_USERNAME }}/pharmetrade:latest . --push
+          docker buildx build -t ${{ secrets.DOCKER_USERNAME }}/pharametrade_app:latest . --push
