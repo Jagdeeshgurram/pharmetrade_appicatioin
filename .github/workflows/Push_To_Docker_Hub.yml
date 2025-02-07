@@ -30,6 +30,6 @@ jobs:
         run: |
           docker buildx build \
             --platform linux/amd64 \
-            --tag ${{ secrets.DOCKER_USERNAME }}/pharametrade_app:1.0 \
+            --tag ${{ secrets.DOCKER_USERNAME }}/pharametrade_app:1.1 \
             --push \
-            .
+            
