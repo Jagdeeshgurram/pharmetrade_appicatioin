@@ -32,7 +32,7 @@ jobs:
         run: |
           docker buildx create --use
           docker buildx build \
-            --platform linux/amd64 \
-            --tag ${{ secrets.DOCKER_USERNAME }}/pharametrade_app:1.0 \
-            --push \
+            -- platform linux/amd64 \
+            -- tag ${{ secrets.DOCKER_USERNAME }}/pharametrade_app:1.0 \
+            -- push \
             .
