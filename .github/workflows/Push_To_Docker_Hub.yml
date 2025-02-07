@@ -28,6 +28,6 @@ jobs:
       # Step 4: Build and Push Docker Image
       - name: Build and Push Docker Image
         run: |
-          docker buildx build --platform linux/amd64 \
+            --platform linux/amd64 \
             -t ${{ secrets.DOCKER_USERNAME }}/pharametrade_app:1.1 \
             --push .
