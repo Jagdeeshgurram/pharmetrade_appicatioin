@@ -32,5 +32,4 @@ jobs:
             --platform linux/amd64 \
             --tag ${{ secrets.DOCKER_USERNAME }}/pharametrade_app:1.0 \
             --push \
-            --file ./Dockerfile \
             .
